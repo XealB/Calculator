@@ -10,7 +10,7 @@ const reducer = (state, action) => {
         case 'reset' :
             return initialState;
         case 'add':
-            return {formula:state.formula+action.value}
+            return {...state, formula:state.formula+action.value}
         case 'calculate':
             try{
                 const resultat = eval(state.formula);
