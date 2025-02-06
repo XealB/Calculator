@@ -2,7 +2,7 @@ const SymbolsButtons = ({onSymbolClick, onSubmit, onReset}) => {
 
 
     const buttonsSymbols = () => { 
-        var arr = ["+","-","x"]
+        var arr = ["+","-","*"]
         return arr.map((i) => {
             return <button value={i} onClick={()=> onSymbolClick(i)}>{i}</button>
         })
